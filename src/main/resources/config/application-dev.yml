@@ -20,11 +20,11 @@ logging:
     com.db.hackathon: DEBUG
 
 eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    service-url:
-      defaultZone: http://admin:hackathon2019@hackathon-eureka-2.herokuapp.com/eureka/
+    instance:
+        prefer-ip-address: true
+    client:
+        service-url:
+            defaultZone: http://admin:hackathon2019@hackathon-eureka-2.herokuapp.com/eureka/
 
 spring:
   profiles:
