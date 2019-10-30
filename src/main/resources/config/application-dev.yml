@@ -43,9 +43,11 @@ spring:
       indent-output: true
   data:
     mongodb:
-      uri: mongodb://hackathonuser:ZrWWtIFHn7ws9nGDO9nnD2ysgXmXi9qawpiQiO7N5c0Fd8GCpmO1j5xRAJm7lfmoJM6xdiS0ECNyg2X6EyegAg==@hackathonuser.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
-      database: gateway
-      port: 80
+      uri: mongodb://gatewayuser:gatewayuser@cluster0-shard-00-00-eagup.azure.mongodb.net:27017,cluster0-shard-00-01-eagup.azure.mongodb.net:27017,cluster0-shard-00-02-eagup.azure.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority
+      database: test
+
+
+      #mongodb://gatewayuser:gatewayuser@cluster0-shard-00-00-eagup.azure.mongodb.net:27017,cluster0-shard-00-01-eagup.azure.mongodb.net:27017,cluster0-shard-00-02-eagup.azure.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority
   mail:
     host: localhost
     port: 25
