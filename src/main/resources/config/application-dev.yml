@@ -25,7 +25,6 @@ eureka:
     client:
         service-url:
             defaultZone: http://admin:hackathon2019@hackathon-eureka-2.herokuapp.com/eureka/
-
 spring:
   profiles:
     active: dev
