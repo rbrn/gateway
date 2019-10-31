@@ -20,9 +20,9 @@ logging:
     com.db.hackathon: DEBUG
 
 eureka:
-    instance:
-        prefer-ip-address: true
-
+  instance:
+    prefer-ip-address: true
+    defaultZone: http://admin:hackathon2019@hackathon-eureka-2.herokuapp.com/eureka/
 
 spring:
   profiles:
@@ -43,7 +43,6 @@ spring:
     mongodb:
       uri: mongodb://gatewayuser:gatewayuser@cluster0-shard-00-00-eagup.azure.mongodb.net:27017,cluster0-shard-00-01-eagup.azure.mongodb.net:27017,cluster0-shard-00-02-eagup.azure.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority
       database: test
-
 
       #mongodb://gatewayuser:gatewayuser@cluster0-shard-00-00-eagup.azure.mongodb.net:27017,cluster0-shard-00-01-eagup.azure.mongodb.net:27017,cluster0-shard-00-02-eagup.azure.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority
   mail:
